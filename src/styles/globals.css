@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --glass: rgba(255,255,255,0.04);
+}
+
+html,body,#__next{height:100%;}
+body{
+  @apply bg-midnight text-slate-100 antialiased;
+  background-image: radial-gradient(circle at 10% 10%, rgba(93,150,255,0.03), transparent 5%), radial-gradient(circle at 90% 80%, rgba(107,46,255,0.03), transparent 6%), linear-gradient(180deg, rgba(4,6,20,0.6), rgba(4,8,18,0.95));
+}
+
+.app-shell{
+  min-height:100vh;
+}
+
+.glass-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+}
+
+.pulse-dot{
+  width:10px;height:10px;border-radius:9999px;background:linear-gradient(90deg,var(--tw-gradient-stops));
+}
